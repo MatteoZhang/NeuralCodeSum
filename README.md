@@ -33,6 +33,19 @@ For example, to train/evaluate the transformer model, run:
 ```
 $ bash transformer.sh 0,1 code2jdoc
 ```
+On GOOGLE COLAB with the repository inside your own drive
+```
+from google.colab import drive
+drive.mount('/content/drive')
+%cd /content/drive/MyDrive/NeuralCodeSum
+!pip install -r requirements.txt
+!python setup.py develop
+%cd /content/drive/MyDrive/NeuralCodeSum/scripts/solidity/
+!bash transformer.sh 0,1 code2sol
+%cd /content/drive/MyDrive/NeuralCodeSum/scripts/
+!bash generate.sh 0,1 code2sol sample.code
+```
+If any problem arise with meteor script just turn off this metric
 
 #### Generated log files
 
