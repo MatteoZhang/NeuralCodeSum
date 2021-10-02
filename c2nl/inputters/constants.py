@@ -28,6 +28,7 @@ TOKEN_TYPE_MAP = {
     'id': 14,
     'name': 15,
     'module': 16
+    # Solidity
 }
 
 AST_TYPE_MAP = {
@@ -38,11 +39,12 @@ AST_TYPE_MAP = {
 
 DATA_LANG_MAP = {
     'java': 'java',
-    'python': 'python'
+    'python': 'python',
+    'solidity':'solidity'
 }
 
 LANG_ID_MAP = {
     'java': 0,
     'python': 1,
-    'c#': 2
+    'solidity': 2
 }

@@ -12,7 +12,7 @@ MODEL_DIR=${SRC_DIR}/tmp
 
 make_dir $MODEL_DIR
 
-DATASET=java
+DATASET=solidity
 
 function generate () {
 
